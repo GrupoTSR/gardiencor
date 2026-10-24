@@ -125,6 +125,41 @@ h1 {
 .glow-one { width: 280px; height: 280px; top: -140px; left: -100px; background: #356a53; }
 .glow-two { width: 220px; height: 220px; right: -100px; bottom: -80px; background: #8a6d3e; opacity: .2; }
 
+.service { width: min(100%, 560px); }
+.service-title { font-size: clamp(32px, 8vw, 48px); line-height: 1.1; letter-spacing: -0.02em; }
+.service .intro { max-width: 440px; }
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+.back-link:hover, .back-link:focus-visible { color: var(--gold); }
+
+.feature-list {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.feature-list li {
+  display: grid;
+  gap: 4px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.feature-list strong { font-size: 15px; }
+.feature-list span { color: var(--muted); font-size: 14px; line-height: 1.5; }
+
 @media (max-width: 560px) {
   .page-shell { padding: 40px 20px; }
   .page-shell::before { inset: 14px; border-radius: 20px; }
